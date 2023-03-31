@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.clock{
+    position: relative;
+    background-color: rgb(214, 254, 255);
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border-radius: 50%;
+    border: black solid ;
+}
+.clock .number{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+.clock .number span{
+    display: inline-block;
+    
+}
+.clock .hour span{ 
+    position: absolute;
+    left: 147px;
+    top: 147px;
+    width: 40%;
+    height: 8px;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    border-radius: 4px;
+}
+.clock .min span{
+    position: absolute;
+    left: 147px;
+    top: 147px;
+    width: 50%;
+    height: 4px;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    border-radius: 4px;
+}
+.clock .sec span{
+    position: absolute;
+    left: 147px;
+    top: 147px;
+    width: 50%;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 0, 0);
+    border-radius: 4px;
+}
+.hour, .min, .sec{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 1s transform linear;
+}
+
+.clock .circle {
+    background-color: blue;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 132px;
+    top: 132px;
+    border: 5px black solid;
+    border-radius: 50%;
+}
+
+.color {
+    font-size: 35px;
+    color: rgb(199, 0, 0);
+    transition: 1s ease-in-out;
+}
+
+.clock #meridian{
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 127px;
+    top: 210px;
+}
